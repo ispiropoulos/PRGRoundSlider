@@ -52,7 +52,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
                                         <real key="value" value="-50"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="1%"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="0%"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="endText" value="100%"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startEndColor">
                                         <color key="value" red="0.43137254899999999" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

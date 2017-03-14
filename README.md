@@ -22,18 +22,18 @@ To create an instance of the class, drag a UIView from the Interface builder and
 ### Programmatically
 ```swift
 func setupSliderProgrammatically(){
-let sliderView = PRGRoundSlider(
-frame: sliderContainerView.bounds,
-value: 0.5,
-strokeColor: SliderKit.darkBlueColor,
-strokeWidth: 3,
-gradientColor: SliderKit.darkPinkColor,
-startAngle: 210,
-endAngle: -30,
-startText: "0%",
-endText: "100%")
+    let sliderView = PRGRoundSlider(
+    frame: sliderContainerView.bounds,
+    value: 0.5,
+    strokeColor: SliderKit.darkBlueColor,
+    strokeWidth: 3,
+    gradientColor: SliderKit.darkPinkColor,
+    startAngle: 210,
+    endAngle: -30,
+    startText: "0%",
+    endText: "100%")
 { (value) in
-return "\(Int(value*100))%"
+    return "\(Int(value*100))%"
 }
 
 
@@ -48,7 +48,7 @@ The properties are pretty straightforward but here are the most important things
 The stroke color of the slider curve, the color of the inner stroke that is found inside the central message circle and a supplementary bottom color if you need to give a gradient look.
 ```swift
 @IBInspectable var strokeColor: UIColor
-@IBInspectable innerStrokeColor: UIColor
+@IBInspectable var innerStrokeColor: UIColor
 @IBInspectable var gradientColor: UIColor 
 ```
 

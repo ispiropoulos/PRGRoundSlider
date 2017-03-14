@@ -1,10 +1,10 @@
-# PRGValidationField
+# PRGRoundSlider
 
 `PRGRoundSlider` is a flexible and customizable implementation of a circular slider view.
 
 It is written in Swift 3.0 and Compatible with iOS 8.0+
 
-![](/PRGValidationField.gif)
+![](/PRGRoundSlider.gif)
 
 ## Usage
 

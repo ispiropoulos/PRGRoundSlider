@@ -103,7 +103,7 @@ Coming soon.
 
 ## Contributing
 
-We welcome all contributions. Please contanct me or submit a pull request, and I will give you an e-Cookie :)
+We welcome all contributions. Please contact me or submit a pull request, and I will give you an e-Cookie :)
 
 ## License
 `PRGRoundSlider` is made for [Programize LLC](https://www.programize.com) by John Spiropoulos and it is available under the MIT license.

@@ -11,16 +11,16 @@ import UIKit
 class ViewController: UIViewController {
  
     
-    @IBOutlet weak var sliderView: PRGRoundSlider!
+    @IBOutlet weak var sliderView: PRGRoundRangeSlider!
 
     @IBOutlet weak var sliderContainerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        sliderView.messageForValue = { (value) in
-            return "\(Int(value*100))%"
+        sliderView.startValue = 0.2
+        sliderView.messageForValue = { (startValue, endValue) in
+            return "\(Int(startValue*100))% - \(Int(endValue*100))%"
         }
         
         DispatchQueue.main.async {

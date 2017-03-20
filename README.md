@@ -13,9 +13,9 @@ To start using the component add it to your project manually as per the [Install
 ### Storyboard
 The UI component can be used via the `PRGRoundSlider` class. 
 
-To create an instance of the class, drag a UIView from the Interface builder and set it's class to `PRGRoundSlider`.
+To create an instance of the class, drag a UIView from the Interface builder and set it's class to `PRGRoundSlider` for single thumb slider or `PRGRoundRangeSlider` for a range slider.
 
-`PRGRoundSlider` is `@IBDesinable` and customizable via `@IBInspectable` properties, this way almost everything can be done via the interface builder.
+`PRGRoundSlider` and `PRGRoundRangeSlider` are `@IBDesinable` and customizable via `@IBInspectable` properties, this way almost everything can be done via the interface builder.
 ![](/Example1.png)
 
 
@@ -80,17 +80,33 @@ the angle of the slider start and end points, their respective text as well as t
 
 ### Internal Stuff
 
-#### value:
+#### value (for the single thumb slider):
 The value of the slider (0 - 1)
 ```swift
 @IBInspectable var value: CGFloat = 0
 ```
 
+#### startValue & endValue (for the rangle slider):
+The start and end values of the slider (0 - 1)
+```swift
+@IBInspectable var startValue: CGFloat
+@IBInspectable var endValue: CGFloat
+
+```
+
 #### messageForValue:
 You can use this if you want to customize the message shown in the center circle:
+
+For the single thumb slider:
 ```swift
 sliderView.messageForValue = { (value) in
-return "\(Int(value*100))%"
+    return "\(Int(value*100))%"
+}
+```
+For the range slider:
+```swift
+sliderView.messageForValue = { (value) in
+    return "\(Int(startValue*100))%-\(Int(endValue*100))"
 }
 ```
 

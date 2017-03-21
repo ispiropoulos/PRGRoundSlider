@@ -11,7 +11,7 @@ It is written in Swift 3.0 and Compatible with iOS 8.0+
 To start using the component add it to your project manually as per the [Installation](#installation) section.
 
 ### Storyboard
-The UI component can be used via the `PRGRoundSlider` class. 
+The UI components can be used via the `PRGRoundSlider` or `PRGRoundRangeSlider` class. 
 
 To create an instance of the class, drag a UIView from the Interface builder and set it's class to `PRGRoundSlider` for single thumb slider or `PRGRoundRangeSlider` for a range slider.
 
@@ -99,7 +99,7 @@ You can use this if you want to customize the message shown in the center circle
 
 For the single thumb slider:
 ```swift
-sliderView.messageForValue = { (value) in
+sliderView.messageForValue = { (startValue,endValue) in
     return "\(Int(value*100))%"
 }
 ```

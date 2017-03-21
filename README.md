@@ -99,13 +99,13 @@ You can use this if you want to customize the message shown in the center circle
 
 For the single thumb slider:
 ```swift
-sliderView.messageForValue = { (startValue,endValue) in
+sliderView.messageForValue = { (value) in
     return "\(Int(value*100))%"
 }
 ```
 For the range slider:
 ```swift
-sliderView.messageForValue = { (value) in
+sliderView.messageForValue = { (startValue,endValue) in
     return "\(Int(startValue*100))%-\(Int(endValue*100))"
 }
 ```
